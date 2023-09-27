@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  font-family: "Courier Prime", monospace;
+  margin: 50;
+  padding: 50;
+}
+
+h1 {
+
+  font-size: 45px;
+  font-weight: 500;
+  color: #553c9a;
+  border-right: 4px solid #000;
+  animation: cursor 1s infinite step-end, typing 10s infinite steps(11);
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes cursor{
+  0%, 100%{border-color: transparent;}
+  50%{border-color: #000;}
+}
+
+@keyframes typing{
+  0%{ width: 0ch} /*Text is hidden*/
+  30%{ width: 8ch;} /*The enitre header will be typed out*/
+  80%{ width: 8ch;} /*Text stays visible*/
+  90%{ width: 0ch;} /*Text is deleted*/
+  100%{ width: 0ch;} /*Text stays hidden*/
+}
+
+p {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+
+.status {
+    color: #000000;
+    background: rgb(241, 230, 230);
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+  margin-right: 25px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: 20, black;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1d461f;
+}
+
+button:focus {
+  outline: none;
+}

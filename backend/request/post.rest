@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlRlc3RhYWphIiwiaWQiOiI2NDM2ODhjYzMwNWE1NTk2MmI0NTczMTYiLCJpYXQiOjE2ODEyOTU1OTV9.gs7WndQ-2tzFHbIekqi-Z1fgiAY-tNr8m73k8y9ZoAo
+
+{
+        "title": "Testi3000",
+        "author": "Meikämake",
+        "user": "642c0e123b97e6c260b66733",
+        "url": "testi.www",
+        "likes": 12
+}
